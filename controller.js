@@ -1,5 +1,5 @@
 
-const stripe = require('stripe')('sk_test_51O7a2xSFs63i9Cz0QI4bEycUKQDJVcvFI5LtJoMOryBpyZ8Q4AmL9qQZVmXUNFt4jSonfbUhbhShOKoQYlr1LplX00gY134Rsj');
+const stripe = require('stripe')('sk...');
 
 const webhooks = async (req, res) => {
    const sig = req.headers['stripe-signature'];
