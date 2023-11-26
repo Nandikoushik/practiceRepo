@@ -3,7 +3,7 @@ const stripe = require('stripe')('sk...');
 
 const webhooks = async (req, res) => {
    const sig = req.headers['stripe-signature'];
-   const endpointSecret = 'whsec_x94kql5F3UMancicIIDDfbFDAbuXD3jC';
+   const endpointSecret = 'whse....';
    try {
       let event = stripe.webhooks.constructEvent(req.body, sig, endpointSecret);
       console.log('event==>', event);
